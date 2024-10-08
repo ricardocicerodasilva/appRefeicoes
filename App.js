@@ -1,11 +1,11 @@
 import React from "react";
 import  { NavigationContainer } from "@react-navigation/native";
-import Rotas from "./components/Rotas";
+import RotasAcesso from "./components/RotaAcesso";
 
 function App() {
   return (
     <NavigationContainer>
-      <Rotas />
+      <RotasAcesso />
     </NavigationContainer>
   );
 }
