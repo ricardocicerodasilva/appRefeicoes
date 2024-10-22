@@ -1,6 +1,6 @@
-import {initializeApp} from "firebase/app";
-import{getFirestore}from "firebase/firestore";
-
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";  
 const firebaseConfig ={
     apiKey: "AIzaSyCyEbrjbjFhwTHxTJ6IloogJTzarABJ7KQ",
     authDomain: "apprefeicaoricardo.firebaseapp.com",
@@ -12,3 +12,4 @@ const firebaseConfig ={
 
 const app = initializeApp(firebaseConfig);
 export const firestore = getFirestore(app);
+export const auth = getAuth(app); // Inicializando e exportando a autenticação
